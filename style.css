@@ -1,0 +1,160 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    color: #b9090b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input[type=file] {
+    margin-top: 10px;
+}
+
+input[type=submit] {
+    background-color: #b9090b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #e50914;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0;
+}
+
+.video, .image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+input[type=submit], button {
+    background-color: #b9090b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 25px; /* Makes the corners rounded */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: #e50914;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #b9090b;
+    width: 0%;
+    border-radius: 25px;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+    width: calc(33% - 40px); /* Three cards per row, adjust margin as needed */
+    margin-right: 20px;
+    vertical-align: top;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Ensure text content is centered */
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+/* Reusing button styles for rounded corners, make sure these styles are included */
+button {
+    background-color: #b9090b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e50914;
+}
+
+/* Adjustments for layout */
+.container {
+    max-width: 1200px; /* Adjust based on your layout */
+}
+
+
+
+.card img {
+    width: 100%; /* Make the image fill the width */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    object-fit: cover; /* Cover the area without losing aspect ratio */
+    margin-bottom: 20px; /* Optional: Adjust spacing between the image and the text */
+}
+
+/* If you want the image to fill the card more precisely */
+.card img {
+    height: 180px; /* Set a fixed height for images */
+    object-position: center; /* Center the image within its container */
+}
